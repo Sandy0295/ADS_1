@@ -95,3 +95,6 @@ bar_graph('elo_prob1','score1','elo_prob2','score2','raptor_prob1','score1','rap
           'Elo Propability & Score for Team1','Elo Propability & Score for Team2',
           'Raptor Probability & Score for Team1','Raptor Probability & Score for Team2',
           'Probability Predictions by ELO & RAPTOR','Probability of winning','Team Scores')
+
+#calling pie chart function with our own column
+pie_chart('total_rating',['BOSTON CELTICS','GOLDEN STATE WARRIORS','DETROIT PISTONS','INDIANA PACERS','BROOKLYN NETS'])
