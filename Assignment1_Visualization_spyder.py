@@ -46,6 +46,24 @@ def histogram(col_a,col_b,col_c,col_d,label_a,label_b,label_c,label_d,title,x_la
     plt.legend(loc='upper left',prop={'size': 16})
     plt.show()
 
+"""
+Lines 55-65 represents a function for bar plot.
+This function can be reused with users choice of columns.
+This bar graph is plotted between the winning probability of 2 teams and their scores
+the frequency of occurances(number of games)
+"""
+def bar_graph(col_a,col_b,col_c,col_d,col_e,col_f,col_g,col_h,label_a,label_b,label_c,label_d,title,x_label,y_label):
+    plt.figure(figsize=(25,15))
+    plt.bar(game_data[col_a],game_data[col_b],label=label_a,width=0.015,alpha=0.5)
+    plt.bar(game_data[col_c],game_data[col_d],label=label_b,width=0.015,alpha=0.5)
+    plt.bar(game_data[col_e],game_data[col_f],label=label_c,width=0.015,alpha=0.5)
+    plt.bar(game_data[col_g],game_data[col_h],label=label_d,width=0.015,alpha=0.5)
+    plt.title(title,fontsize=23)
+    plt.xlabel(x_label,fontsize=23)
+    plt.ylabel(y_label,fontsize=23)
+    plt.legend(loc='upper left',prop={'size': 16.5})
+    plt.show()
+
 #defining the columns that are required for this scenario from the data set
 required_cols = ['elo1_pre','elo2_pre','elo_prob1','elo_prob2','raptor1_pre','raptor2_pre','raptor_prob1','raptor_prob2','score1','score2','total_rating']
 
