@@ -78,3 +78,9 @@ line_plot('elo1_pre','elo2_pre','raptor1_pre','raptor2_pre','ELO1 Prediction','E
 
 #calling the histogram function with our own columns
 histogram('elo1_pre','elo2_pre','raptor1_pre','raptor2_pre','ELO1 Prediction','ELO2 Prediction','RAPTOR1 Prediction','RAPATOR2 Prediction','NBA Predictions','Predicted Score','Frequency (Number of Games)')
+
+#calling bar graph function with our own columns
+bar_graph('elo_prob1','score1','elo_prob2','score2','raptor_prob1','score1','raptor_prob2','score2',
+          'Elo Propability & Score for Team1','Elo Propability & Score for Team2',
+          'Raptor Probability & Score for Team1','Raptor Probability & Score for Team2',
+          'Probability Predictions by ELO & RAPTOR','Probability of winning','Team Scores')
