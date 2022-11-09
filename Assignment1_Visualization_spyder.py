@@ -38,4 +38,6 @@ game_data = pd.read_csv('C:/Users/sande/MS-DS/ADS-1/Assg-1/nba_elo_latest.csv',u
 #setting the index value to 1 instead of default value 0
 game_data.index = game_data.index + 1
 
+#calling the line_plot function with our own columns
+line_plot('elo1_pre','elo2_pre','raptor1_pre','raptor2_pre','ELO1 Prediction','ELO2 Prediction','RAPTOR1 Prediction','RAPTOR2 Prediction','NBA Predictions','Game','Predicted Score')
 
