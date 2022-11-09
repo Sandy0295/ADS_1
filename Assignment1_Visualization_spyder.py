@@ -64,6 +64,17 @@ def bar_graph(col_a,col_b,col_c,col_d,col_e,col_f,col_g,col_h,label_a,label_b,la
     plt.legend(loc='upper left',prop={'size': 16.5})
     plt.show()
 
+"""
+lines 73-76 represents a function for pie chart.
+This function can be reused with users choice of column.
+This pie chart is plotted for the ratings of the five teams.
+Chart is divided into five wedges representing the total ratings in percentages over the whole pie chart.
+"""
+def pie_chart(col,col_labels):
+    plt.pie(game_data[col],labels=col_labels,autopct='%1.0f%%')
+    plt.legend(loc=1, bbox_to_anchor=(1,1.5))
+    plt.show()
+
 #defining the columns that are required for this scenario from the data set
 required_cols = ['elo1_pre','elo2_pre','elo_prob1','elo_prob2','raptor1_pre','raptor2_pre','raptor_prob1','raptor_prob2','score1','score2','total_rating']
 
