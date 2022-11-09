@@ -65,13 +65,14 @@ def bar_graph(col_a,col_b,col_c,col_d,col_e,col_f,col_g,col_h,label_a,label_b,la
     plt.show()
 
 """
-lines 73-76 represents a function for pie chart.
+lines 73-77 represents a function for pie chart.
 This function can be reused with users choice of column.
 This pie chart is plotted for the ratings of the five teams.
 Chart is divided into five wedges representing the total ratings in percentages over the whole pie chart.
 """
-def pie_chart(col,col_labels):
+def pie_chart(col,col_labels,title):
     plt.pie(game_data[col],labels=col_labels,autopct='%1.0f%%')
+    plt.title(title)
     plt.legend(loc=1, bbox_to_anchor=(1,1.5))
     plt.show()
 
@@ -97,4 +98,4 @@ bar_graph('elo_prob1','score1','elo_prob2','score2','raptor_prob1','score1','rap
           'Probability Predictions by ELO & RAPTOR','Probability of winning','Team Scores')
 
 #calling pie chart function with our own column
-pie_chart('total_rating',['BOSTON CELTICS','GOLDEN STATE WARRIORS','DETROIT PISTONS','INDIANA PACERS','BROOKLYN NETS'])
+pie_chart('total_rating',['BOSTON CELTICS','GOLDEN STATE WARRIORS','DETROIT PISTONS','INDIANA PACERS','BROOKLYN NETS'],'Team Ratings')
