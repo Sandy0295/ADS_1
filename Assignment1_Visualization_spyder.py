@@ -58,3 +58,5 @@ game_data.index = game_data.index + 1
 #calling the line_plot function with our own columns
 line_plot('elo1_pre','elo2_pre','raptor1_pre','raptor2_pre','ELO1 Prediction','ELO2 Prediction','RAPTOR1 Prediction','RAPTOR2 Prediction','NBA Predictions','Game','Predicted Score')
 
+#calling the histogram function with our own columns
+histogram('elo1_pre','elo2_pre','raptor1_pre','raptor2_pre','ELO1 Prediction','ELO2 Prediction','RAPTOR1 Prediction','RAPATOR2 Prediction','NBA Predictions','Predicted Score','Frequency (Number of Games)')
