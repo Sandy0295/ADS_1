@@ -29,6 +29,23 @@ def line_plot(col_a,col_b,col_c,col_d,label_a,label_b,label_c,label_d,title,x_la
     plt.legend(loc='lower left')
     plt.show()
 
+"""
+Lines 37-47 represents a function for histogram.
+This function can be reused with users choice of columns.
+This histogram is plotted between predicted scores and the frequency of occurances(number of games)
+"""
+def histogram(col_a,col_b,col_c,col_d,label_a,label_b,label_c,label_d,title,x_label,y_label):
+    plt.figure(figsize=(25,15)) 
+    plt.hist(game_data[col_a],bins = 35,alpha = .25,label=label_a)
+    plt.hist(game_data[col_b],bins = 35,alpha = .25,label=label_b)
+    plt.hist(game_data[col_c],bins = 35,alpha = .25,label=label_c)
+    plt.hist(game_data[col_d],bins = 35,alpha = .25,label=label_d)
+    plt.title(title,fontsize=23)
+    plt.xlabel(x_label,fontsize=23)
+    plt.ylabel(y_label,fontsize=23)
+    plt.legend(loc='upper left',prop={'size': 16})
+    plt.show()
+
 #defining the columns that are required for this scenario from the data set
 required_cols = ['elo1_pre','elo2_pre','elo_prob1','elo_prob2','raptor1_pre','raptor2_pre','raptor_prob1','raptor_prob2','score1','score2','total_rating']
 
